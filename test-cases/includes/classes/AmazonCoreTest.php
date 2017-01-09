@@ -59,12 +59,12 @@ class AmazonCoreTest extends PHPUnit_Framework_TestCase {
     }
 
     /**
-     * @covers AmazonCore::setConfig
+     * @covers AmazonCore::setConfigFile
      * @expectedException Exception
      * @expectedExceptionMessage Config file does not exist or cannot be read! (no)
      */
     public function testSetConfig() {
-        $this->object->setConfig('no');
+        $this->object->setConfigFile('no');
     }
 
     /**
